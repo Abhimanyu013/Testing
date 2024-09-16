@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="com.oracle.bookstore.model.services.G10_Bookstore_AppModule">
+      <AppModuleConfig name="G10_Bookstore_AppModuleLocal" DeployPlatform="LOCAL" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" ApplicationName="com.oracle.bookstore.model.services.G10_Bookstore_AppModule" jbo.project="com.oracle.bookstore.model.Model">
+         <Database jbo.locking.mode="optimistic" JDBCDataSource="java:comp/env/jdbc/G10_DS" jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="com.oracle.bookstore.model.services.G10_Bookstore_AppModule"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="G10_Bookstore_AppModuleShared" DeployPlatform="LOCAL" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" ApplicationName="com.oracle.bookstore.model.services.G10_Bookstore_AppModule" jbo.project="com.oracle.bookstore.model.Model">
+         <AM-Pooling jbo.ampool.isuseexclusive="false" jbo.ampool.maxpoolsize="1"/>
+         <Database jbo.locking.mode="optimistic" JDBCDataSource="java:comp/env/jdbc/G10_DS" jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="com.oracle.bookstore.model.services.G10_Bookstore_AppModule"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>
